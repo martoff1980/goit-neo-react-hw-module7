@@ -4,12 +4,6 @@ import { selectFilteredContacts } from '../../redux/contactsSlice';
 import './ContactList.css';
 
 const ContactList = () => {
-  // const contacts = useSelector(state => state.contacts.items);
-  const filter = useSelector(state => state.filters.name.toLowerCase());
-  // const filteredContacts = contacts.filter(contact =>
-  //   contact.name.toLowerCase().includes(filter)
-  // );
-
   const filteredContacts = useSelector(selectFilteredContacts);
 
   return (
